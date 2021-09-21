@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/registro-css.css">
+    <script src="js/funciones.js"></script>
+    <script src="js/validacionesRegistro.js"></script>
+    <script src="js/navegador.js"></script>
+
+    <title>Registrarse</title>
+
+    <script>
+      
+    </script>
+
+</head>
+<body>
+
+    <header class="header">
+        <img id="logo" src="./images/logo.png" alt="Error al cargar" />
+
+        <div class="container logo-nav-container" >
+            <a href="#" class="logo"></a>
+
+            <span class="menu-icon">Ver menú</span>
+
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-text"><a>¿Ya tienes cuenta?</a></li>
+                    <li>
+                        <input id="btnIS" type="button" value="Iniciar Sesión">
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header> 
+
+    <section class="border-red">
+
+        <div class="register">
+            <p id="qualio">Permitenos tus datos</p>
+            <p id="typo">Podrás reservar nuestras instalaciones registrandote y haciendo login</p>
+
+           <!-- <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data" autocomplete="off" class="forma">  -->
+           <form autocomplete="off" class="forma"> 
+                
+                    <span class="spans">
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="text" id="nombre" name="nombre" class="inp" placeholder="&nbsp;" tabindex="1">
+                                <span class="label">Nombre</span>
+                                <span class="border"></span>
+                                <div id="eNom" class="error2">Errores</div>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="text" id="tel" name="tel" class="inp" placeholder="&nbsp;" tabindex="3">
+                                <span class="label">Telefono</span>
+                                <span class="border"></span>
+                                <div id="eTel" class="error2">Errores</div>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="password" id="pass1" name="contra" class="inp" placeholder="&nbsp;" tabindex="5">
+                                <span class="label">Contraseña</span>
+                                <span class="border"></span>
+                                <div id="ePass1" class="error2">Errores</div>
+                            </label>
+                        </div>
+                    </span>
+
+                    <span class="spans">
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="text" id="apell" name="apellidos" class="inp" placeholder="&nbsp;" tabindex="2">
+                                <span class="label">Apellidos</span>
+                                <span class="border"></span>
+                                <div id="eAp" class="error2">Errores</div>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="email" id="correo" name="correo" class="inp" placeholder="&nbsp;" tabindex="4">
+                                <span class="label">Correo</span>
+                                <span class="border"></span>
+                                <div id="eCorreo" class="error2">Errores</div>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="inp" class="inp">
+                                <input type="password" id="pass2" name="confContra" class="inp" placeholder="&nbsp;" tabindex="6">
+                                <span class="label">Confirmar contraseña</span>
+                                <span class="border"></span>
+                                <div id="ePass2" class="error2">Errores</div>
+                            </label>
+                        </div>
+                        <p id="info">*Todos los datos son requeridos. </br>
+                            *Contra.: Minimo 8 letras y un número.
+                        </p>
+                       
+                    </span>
+
+                    <div id="buttonid">
+                        <input id="btnEnviarRegistro" type="button" value="Registrarse" class="boton">
+                    </div>
+                
+            </form>
+
+            
+           
+
+        </div>
+
+    </section>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function submit(){
+		document.getElementById("formReg").submit(); 
+	}
+
+</script>

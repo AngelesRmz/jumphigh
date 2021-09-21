@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/registro-css.css">
+    <script src="js/funciones.js"></script>
+    <script src="js/validacionesRegistro.js"></script>
+    <script src="js/navegador.js"></script>
+
+    <title>Correo Enviado</title>
+
+    <script>
+      
+    </script>
+
+</head>
+<body>
+
+    <header class="header">
+        <img id="logo" src="./images/logo.png" alt="Error al cargar" />
+
+        <div class="container logo-nav-container" >
+            <a href="#" class="logo"></a>
+
+            <span class="menu-icon">Ver menú</span>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Áreas</a></li>
+                    <li><a href="#">Horario y Ubicación</a></li>
+                    <li><a href="#">Reservar</a></li>
+                    <li>
+                        <input id="registro" type="button" value="Registrarse">
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header> 
+
+    <section class="border-red">
+        <div class="register" id="rDone">
+            <div id="registerCont">
+                <img id="imagen" src="./images/rDone.png" alt="">
+                <div id="textoR">
+                        <p id="hecho">¡Hecho!</p>
+                        <p class="abajo">El correo se ha enviado</p>
+                        <p class="abajo">Espera a que uno de nuestros compañeros te responda</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function submit(){
+		document.getElementById("formReg").submit(); 
+	}
+
+</script>
