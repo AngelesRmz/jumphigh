@@ -1,0 +1,258 @@
+@font-face{
+    font-family: "Typo Round Demo";
+    src: url("fonts/Typo_Round_Bold_Demo.otf");
+   
+  }
+
+@font-face{
+  font-family: "Qualio";
+  src: url("fonts/Qualio.otf");
+}
+
+@font-face{
+  font-family: "Opinio";
+  src: url("fonts/Opinio-PersonalUse.otf");
+}
+
+@font-face{
+  font-family: "Montserrat Alternates Medium";
+  src: url("fonts/MontserratAlternates-Medium.otf");
+}
+
+
+#qualio{
+  font-size: 1.7rem;
+  font-family: "Qualio";
+  font-weight: bold;
+  margin: 0;
+  color: #ec0101;
+}
+
+#typo{
+  font-family: "Typo Round Demo";
+  margin-top: 0.8rem;
+  color: #585757;
+  font-size: 1.1rem;
+}
+
+.border-red{
+    margin-top: 7rem;
+    width: 90%;
+    /* height: 1%; */
+    margin-left: auto;
+    margin-right: auto;
+    border-left: #ec0101 solid 0.2rem;
+    /*background-color: greenyellow;*/
+}
+
+.register{
+    padding-top: 3rem;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
+}
+
+.spans{
+  font-family: "Montserrat Alternates Medium";
+  display: inline-block;
+  margin-right: 10rem;
+}
+
+.inputs{
+  margin: 1.5rem 0 1rem 0;
+ width: 300px;
+
+}
+
+.boton{
+    font-family: "Typo Round Demo";
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right, #F54200 , #EC0101);
+    border: solid;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 0.6rem 2rem;
+}
+
+.boton:hover{
+  color: #f54200;
+  border: 5px solid linear-gradient(to right, #F54200 , #EC0101);
+  background: none;
+}
+.boton:active{
+  transform: scale(1.05);
+}
+
+#info{
+  font-family: "Opinio";
+  float: right;
+  display: table-cell;
+  color: #000000;
+  font-weight: bold;
+}
+
+#buttonid{
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.forma{
+  min-width: 300px;
+  width: 80%;
+   text-align: center;
+    
+}
+
+.forma *{
+  box-sizing: border-box;
+}
+
+
+.inp{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+  }
+
+.inp .label{
+position: absolute;
+top: -3px;
+left: 10px;
+font-size: 16px;
+color: #808186;
+font-weight: 500;
+transform-origin: 0 0;
+transition: all .2s ease;
+z-index: -1;
+cursor: text;
+}
+
+.inp .border{
+position: absolute;
+bottom: -14px;
+left: 0;
+height: 2px;
+width: 100%;
+background: #f54200;
+transform: scaleX(0);
+transform-origin: 0 0;
+transition: all .15s ease;
+}
+
+.inp input{
+-webkit-appearance: none;
+width: 100%;
+border: 0;
+font-family: inherit;
+padding: 12px 0;
+height: 48px;
+font-size: 16px;
+font-weight: 500;
+border-bottom: 2px solid #C8CCD4;
+background: none;
+border-radius: 0;
+color: #223254;
+transition: all .15s ease;
+}
+
+.inp input:hover{
+    background: rgba(#223254,.03);
+}
+
+.inp input:not(:placeholder-shown) + span{
+    color: #5A667F;
+    transform: translateY(-26px) scale(.75);
+}
+
+.inp input:focus{
+background: none;
+outline: none;
+}
+
+.inp input:focus + span{
+  color: #f54200  ;
+  transform: translateY(-26px) scale(.75);
+}
+
+.inp input:focus + span + .border{
+    transform: scaleX(1);
+}
+
+.error2{
+  font-family: "Opinio";
+  font-weight: bold;
+  color: red;
+  text-align: left;
+}
+
+#sesion .error2{
+  padding-left: 11rem;
+}
+
+#rDone{
+  margin-bottom: 0 !important;
+  height: 38rem;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  
+}
+
+#registerCont{
+  height: 100%;
+}
+
+#textoR{
+  display: inline-block;
+  padding-left: 2rem;
+  vertical-align: bottom;
+  border-left: #EC0101 solid 0.3rem;
+  margin-bottom: 6rem;
+}
+
+.abajo{
+  margin: 0;
+  font-family: "Typo Round Demo";
+  color: #F54200;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#imagen{
+  height: 50%;
+  padding: 6rem 15rem 6rem 15rem;
+  vertical-align: middle;
+}
+
+.rDone#hecho{
+  margin-bottom: 0;
+}
+
+
+
+#registerCont #buttonid{
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  padding-right: 20rem !important;
+}
+
+#hecho{
+  font-family: Qualio;
+  color: #EC0101;
+  font-weight: 900;
+  font-size: 55px;
+  margin-top: 0;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++REGISTRO HECHO+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 767px){
+  #buttonid{
+    text-align: center;
+  }
+}

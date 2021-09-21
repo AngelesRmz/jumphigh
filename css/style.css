@@ -1,0 +1,179 @@
+@font-face{
+    font-family: "Typo Round Demo";
+    src: url("fonts/Typo_Round_Bold_Demo.otf");
+   
+  }
+@font-face{
+  font-family: "Qualio";
+  src: url("fonts/Qualio.otf");
+}
+
+@font-face{
+    font-family: "Opinio";
+    src: url("fonts/Opinio-PersonalUse.otf");
+  }
+
+  @font-face{
+    font-family: "Montserrat Alternates Medium";
+    src: url("fonts/MontserratAlternates-Medium.otf");
+  }
+
+
+body{
+    font-family: "Typo";
+    background-color: #F5F5F5;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1450px;
+    min-width: 220px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #262525;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.header a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#logo{
+    height: 4rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    position: fixed;
+    cursor: pointer;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon{
+    display: none;
+    font-family: "Qualio";
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    font-family: "Qualio";
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navigation ul li.nav-text a{
+    display: block;
+    font-family: "Qualio";
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navigation ul li input{
+    font-family: "Typo Round Demo";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right, #F54200 , #EC0101);
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 0.3rem 0.6rem;
+}
+
+.navigation ul li input:hover{
+    border: 2px solid #F54200;
+    background: none;
+  }
+
+.navigation ul li input:active{
+    transform: scale(1.05);
+  }
+
+.navigation ul li a:hover{
+    border: none;
+    border-bottom: #EC0101 solid 0.1rem;
+    transition: all 0.2s linear;
+}
+
+.main{
+    background: #F5F5F5;
+    padding-top: 4rem;
+}
+
+@media only screen and (max-width: 835px){
+    
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding-bottom: 0.8rem;
+        padding-right: 1rem;
+        /* padding: 0 0.5rem; */
+    }
+
+    .navigation{
+        width: 100%;
+        background-color: #262525;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .navigation ul.show{
+        display: block;
+    }
+    
+    .navigation ul li{
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0 0.5rem 0;
+        padding-bottom: 0.5rem;
+        
+    }
+    
+    .navigation ul li a:hover{
+        color: #EC0101;
+        border-bottom: #EC0101 solid 0.1rem;
+        transition: all 0.2s linear;
+    }
+}

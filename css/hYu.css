@@ -1,0 +1,112 @@
+@font-face{
+    font-family: "Typo Round Demo";
+    src: url("fonts/Typo_Round_Bold_Demo.otf");
+  }
+  
+  @font-face{
+  font-family: "Montserrat Alternates Medium";
+  src: url("fonts/MontserratAlternates-Medium.otf");
+}
+  
+#hecho{
+    font-size: 1.7rem !important;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #EC0101;
+    /*margin-bottom: 1%;*/
+}
+
+.abajo{
+/*   font-familt: "Typo Round Demo";*/
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #262525;
+    margin-bottom: 5%;
+}
+
+#dir{
+    font-family: "Montserrat Alternates Medium";
+    font-size: 0.9rem;
+    color: #262525;
+    font-weight: lighter;
+    margin-bottom: 5%;
+}
+
+#textoR.horario{
+    display: block;
+}
+
+#textoR #hora{
+     font-family: "Montserrat Alternates Medium";
+     font-size: 0.9rem;
+      font-weight: lighter;
+     margin-top: 0;
+     color: #262525;
+}
+
+#registerCont{
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.abajo#dias{
+   margin-bottom: 0;
+}
+
+.Contact #hecho{
+    /*margin-bottom: 1%;*/
+}
+
+.Contact #llamar{
+    margin-bottom: 0;
+}
+
+.Contact #tel{
+    font-family: "Montserrat Alternates Medium";
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: #262525;
+}
+
+#textoR .contact{
+    margin-bottom: 5%;
+}
+
+#textoR .hora{
+    margin-bottom: 1%;
+}
+
+#textoR .direcc{
+    margin-bottom: 5%;
+}
+
+#textoR{
+     border-left: #EC0101 solid 0.3rem;
+}
+
+#textoR.Contact{
+    position:  absolute;
+    margin-left: 17%;
+}
+
+.inputs{
+    margin: 0;
+}
+
+#mensaje{
+    resize: none;
+    border: #ec0101 solid 0.1rem;
+    background-color: #F5F5F5;
+    color: #262525;
+}
+
+.forma{
+    margin-top: 5%;
+}
+
+.boton{
+    font-size: 1rem;
+}
+
+#registerCont #buttonid.sendmail{
+    padding-right:  0 !important;
+}

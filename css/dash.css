@@ -1,0 +1,234 @@
+@font-face{
+    font-family: "Montserrat Alternates Medium";
+    src: url("fonts/MontserratAlternates-Medium.otf");
+  }
+
+@font-face{
+font-family: "Qualio";
+src: url("fonts/Qualio.otf");
+}
+
+@font-face{
+    font-family: "Typo Round Demo";
+    src: url("fonts/Typo_Round_Bold_Demo.otf");
+   
+  }
+
+#dash{
+    /*overflow: hidden;*/
+}
+
+#fondoDash{
+    width: 100% !important;
+    height: 100vh !important;
+    background-image: url("../images/jumparena_3.png") !important;
+    /* background-color: none; */
+    /* background-repeat: no-repeat;*/
+    background-size: cover; 
+}
+
+#txtDash{
+    color: #F54200;
+    font-family: "Montserrat Alternates Medium";
+    text-shadow:
+                -1px -1px 0 #000000,  
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+#divTxt{
+    text-align: center;
+}
+
+
+#precio{
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: "Montserrat Alternates Medium";
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    float: right;
+    font-size: 3rem;
+}
+
+#precio2{
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: "Montserrat Alternates Medium";
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 23rem;
+    padding-right: 5rem;
+    padding-left: 13rem;
+    padding-top: 28rem;
+    padding-bottom: 14rem;
+
+}
+
+#txtTexto{
+    color: #FF9269;
+    font-family: "Qualio";
+    font-weight: bolder;
+    font-size: 3.4rem;
+    margin: 0;
+    padding-left: 2.8rem;
+}
+
+#xHora{
+    position: absolute;
+}
+
+#btnQuien{
+    border: 2px solid #6A6600;
+   background-color: rgba(255, 255, 255, 0.1);
+   background-image: none;
+   border-radius: 50px;
+   
+}
+
+#btnDiv{
+    padding-top: 33rem;
+    padding-left: 5rem;
+}
+
+#dashBack{
+    width: 100%;
+    position: absolute;
+    padding-top: 8px;
+}
+
+#divContainer{
+    position: absolute;
+    width:  100%;
+}
+
+.precios{
+    display: inline-block;
+}
+
+.txtPrecio{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#divPrecios{
+    padding: 3.5%;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-bottom: 1%;
+}
+
+.xhora{
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+#dashContainer{
+  background-color: #F5F5F5;  
+  position: absolute;
+  width: 100%;
+
+}
+
+.divCont{
+    display: inline-block;
+    width: 49.4%;
+    text-align: center;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++MODAL+++++++++++++++++++++++++++++++++ */
+#modal{
+    background: rgba(46, 43, 43, 0.9);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: -100vh; /*Poner -100vh para que no se vea*/
+    left: 10vw;
+    height: 80vh;
+    width: 80vw;
+    transition: all .5s;
+    z-index: 100;
+}
+
+#modal p {
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #mostrar-modal {
+    display: none;
+  }
+  #mostrar-modal + label {
+    background: dimgray;
+    display: table;
+    color: #fff;
+    padding: 0 1em;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 40px;
+  }
+  #mostrar-modal + label:hover {
+    background: orangered;
+  }
+
+  #modal.modal {
+    top: 15vh;
+  }
+
+  #label-mostrarModal.abierto-cerrado{
+      margin-left: 13rem;
+      margin-top: 0.9rem;
+      position: absolute;
+      font-family: "Typo Round Demo";
+      font-size: 1.8rem;
+      color: #1caa0f;
+      font-weight: bold;
+  }
+
+  #label-mostrarModal.abierto-cerrado i{
+    color:whitesmoke;
+  }
+
+  #dashModal{
+      width: 80%;
+      margin: auto;
+      margin-top: 5%;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++SLIDER+++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.prom{
+    font-family: "Qualio";
+    color: darkslategrey;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.flexslider{
+    width: 80%;
+    margin: auto;
+}
+
+#textProm{
+    font-family: "Qualio";
+    font-size: 1.5rem;
+    color: black;
+}
+
